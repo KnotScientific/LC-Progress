@@ -7,7 +7,11 @@ export default function App() {
         (question) =>
           question.note && (
             <div>
-              <h1>{question.title}</h1>
+              <h1>
+                <a
+                  href={`https://leetcode.com/problems/${question.titleSlug}/submissions/`}
+                >{`${question.questionId}. ${question.title}`}</a>
+              </h1>
               {question.note.split(";").map((note) => (
                 <h2>• {note}</h2>
               ))}
