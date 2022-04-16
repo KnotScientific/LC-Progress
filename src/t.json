@@ -1,0 +1,610 @@
+[
+  {
+    "questionId": "1",
+    "week": 1,
+    "group": "Sequences",
+    "title": "Two Sum",
+    "titleSlug": "two-sum",
+    "note": "Use Map();target - num[i];has(), set(), get() of map"
+  },
+  {
+    "questionId": "3",
+    "week": 2,
+    "group": "Data Structures",
+    "title": "Longest Substring Without Repeating Characters",
+    "titleSlug": "longest-substring-without-repeating-characters",
+    "note": ""
+  },
+  {
+    "questionId": "5",
+    "week": 5,
+    "group": "Dynamic Programming",
+    "title": "Longest Palindromic Substring",
+    "titleSlug": "longest-palindromic-substring",
+    "note": ""
+  },
+  {
+    "questionId": "11",
+    "week": 2,
+    "group": "Data Structures",
+    "title": "Container With Most Water",
+    "titleSlug": "container-with-most-water",
+    "note": ""
+  },
+  {
+    "questionId": "15",
+    "week": 1,
+    "group": "Sequences",
+    "title": "3Sum",
+    "titleSlug": "3sum",
+    "note": "num.sort((a,b)=>a-b);2 Pointers left end,right end;num[i]+num[left]+num[right]===0;If less than zero, advance left;If greater than zero, deadvance right;If equal to zero, keep on advancing left till num[left] !== num[left-1]"
+  },
+  {
+    "questionId": "19",
+    "week": 2,
+    "group": "Data Structures",
+    "title": "Remove Nth Node From End of List",
+    "titleSlug": "remove-nth-node-from-end-of-list",
+    "note": ""
+  },
+  {
+    "questionId": "20",
+    "week": 1,
+    "group": "Sequences",
+    "title": "Valid Parentheses",
+    "titleSlug": "valid-parentheses",
+    "note": "Stack array;Store the opening brackets;If a closing bracket, pop from stack;If it's not the opposite of the closing bracket, return false;If any leftover in stack, return false"
+  },
+  {
+    "questionId": "21",
+    "week": 2,
+    "group": "Data Structures",
+    "title": "Merge Two Sorted Lists",
+    "titleSlug": "merge-two-sorted-lists",
+    "note": ""
+  },
+  {
+    "questionId": "23",
+    "week": 4,
+    "group": "More data structures​​",
+    "title": "Merge k Sorted Lists",
+    "titleSlug": "merge-k-sorted-lists",
+    "note": ""
+  },
+  {
+    "questionId": "33",
+    "week": 1,
+    "group": "Sequences",
+    "title": "Search in Rotated Sorted Array",
+    "titleSlug": "search-in-rotated-sorted-array",
+    "note": ""
+  },
+  {
+    "questionId": "39",
+    "week": 5,
+    "group": "Dynamic Programming​​",
+    "title": "Combination Sum",
+    "titleSlug": "combination-sum",
+    "note": ""
+  },
+  {
+    "questionId": "48",
+    "week": 2,
+    "group": "Data Structures",
+    "title": "Rotate Image",
+    "titleSlug": "rotate-image",
+    "note": ""
+  },
+  {
+    "questionId": "49",
+    "week": 1,
+    "group": "Sequences",
+    "title": "Group Anagrams",
+    "titleSlug": "group-anagrams",
+    "note": "Object;The key is the bucket array of 26 letters;The values are an array containing each grouped anagrams;Push in object value;Print Object.values(obj)"
+  },
+  {
+    "questionId": "53",
+    "week": 1,
+    "group": "Sequences",
+    "title": "Maximum Subarray",
+    "titleSlug": "maximum-subarray",
+    "note": "Keep track of sum;Iterate from i=1 to arr.length-1;Keep track of max at each iteration;By changing arr[i] to max of either arr[i] or arr[i-1] + arr[i];return Math.max(...arr)"
+  },
+  {
+    "questionId": "54",
+    "week": 2,
+    "group": "Data Structures",
+    "title": "Spiral Matrix",
+    "titleSlug": "spiral-matrix",
+    "note": ""
+  },
+  {
+    "questionId": "55",
+    "week": 5,
+    "group": "Dynamic Programming​​",
+    "title": "Jump Game",
+    "titleSlug": "jump-game",
+    "note": ""
+  },
+  {
+    "questionId": "56",
+    "week": 1,
+    "group": "Sequences",
+    "title": "Merge Intervals",
+    "titleSlug": "merge-intervals",
+    "note": "Sort the starts of every intervals;intervals.sort((a,b)=>a[0]-b[0]);tmp[1] compare with intervals[i][0] and intervals[i][1]"
+  },
+  {
+    "questionId": "57",
+    "week": 4,
+    "group": "More data structures​​",
+    "title": "Insert Interval",
+    "titleSlug": "insert-interval",
+    "note": ""
+  },
+  {
+    "questionId": "62",
+    "week": 5,
+    "group": "Dynamic Programming​​",
+    "title": "Unique Paths",
+    "titleSlug": "unique-paths",
+    "note": ""
+  },
+  {
+    "questionId": "70",
+    "week": 5,
+    "group": "Dynamic Programming​​",
+    "title": "Climbing Stairs",
+    "titleSlug": "climbing-stairs",
+    "note": ""
+  },
+  {
+    "questionId": "73",
+    "week": 2,
+    "group": "Data Structures",
+    "title": "Set Matrix Zeroes",
+    "titleSlug": "set-matrix-zeroes",
+    "note": ""
+  },
+  {
+    "questionId": "76",
+    "week": 2,
+    "group": "Data Structures",
+    "title": "Minimum Window Substring",
+    "titleSlug": "minimum-window-substring",
+    "note": ""
+  },
+  {
+    "questionId": "79",
+    "week": 4,
+    "group": "More data structures​​",
+    "title": "Word Search",
+    "titleSlug": "word-search",
+    "note": ""
+  },
+  {
+    "questionId": "91",
+    "week": 5,
+    "group": "Dynamic Programming​​",
+    "title": "Decode Ways",
+    "titleSlug": "decode-ways",
+    "note": ""
+  },
+  {
+    "questionId": "98",
+    "week": 3,
+    "group": "Non-linear data structures​",
+    "title": "Validate Binary Search Tree",
+    "titleSlug": "validate-binary-search-tree",
+    "note": ""
+  },
+  {
+    "questionId": "100",
+    "week": 3,
+    "group": "Non-linear data structures​",
+    "title": "Same Tree",
+    "titleSlug": "same-tree",
+    "note": ""
+  },
+  {
+    "questionId": "102",
+    "week": 3,
+    "group": "Non-linear data structures​",
+    "title": "Binary Tree Level Order Traversal",
+    "titleSlug": "binary-tree-level-order-traversal",
+    "note": ""
+  },
+  {
+    "questionId": "104",
+    "week": 3,
+    "group": "Non-linear data structures​",
+    "title": "Maximum Depth of Binary Tree",
+    "titleSlug": "maximum-depth-of-binary-tree",
+    "note": ""
+  },
+  {
+    "questionId": "105",
+    "week": 3,
+    "group": "Non-linear data structures​",
+    "title": "Construct Binary Tree from Preorder and Inorder Traversal",
+    "titleSlug": "construct-binary-tree-from-preorder-and-inorder-traversal",
+    "note": ""
+  },
+  {
+    "questionId": "121",
+    "week": 1,
+    "group": "Sequences",
+    "title": "Best Time To Buy And Sell Stock",
+    "titleSlug": "best-time-to-buy-and-sell-stock",
+    "note": "Left to right;Keep tmp profit variable;Keep track of lowest day;arr[i] - arr[lowestDay]"
+  },
+  {
+    "questionId": "124",
+    "week": 3,
+    "group": "Non-linear data structures​",
+    "title": "Binary Tree Maximum Path Sum",
+    "titleSlug": "binary-tree-maximum-path-sum",
+    "note": ""
+  },
+  {
+    "questionId": "125",
+    "week": 1,
+    "group": "Sequences",
+    "title": "Valid Palindrome",
+    "titleSlug": "valid-palindrome",
+    "note": ""
+  },
+  {
+    "questionId": "128",
+    "week": 4,
+    "group": "More data structures​​",
+    "title": "Longest Consecutive Sequence",
+    "titleSlug": "longest-consecutive-sequence",
+    "note": ""
+  },
+  {
+    "questionId": "133",
+    "week": 3,
+    "group": "Non-linear data structures​",
+    "title": "Clone Graph",
+    "titleSlug": "clone-graph",
+    "note": ""
+  },
+  {
+    "questionId": "139",
+    "week": 5,
+    "group": "Dynamic Programming​​",
+    "title": "Word Break",
+    "titleSlug": "word-break",
+    "note": ""
+  },
+  {
+    "questionId": "141",
+    "week": 2,
+    "group": "Data Structures",
+    "title": "Linked List Cycle",
+    "titleSlug": "linked-list-cycle",
+    "note": ""
+  },
+  {
+    "questionId": "143",
+    "week": 2,
+    "group": "Data Structures",
+    "title": "Reorder List",
+    "titleSlug": "reorder-list",
+    "note": ""
+  },
+  {
+    "questionId": "152",
+    "week": 1,
+    "group": "Sequences",
+    "title": "Maximum Product Subarray",
+    "titleSlug": "maximum-product-subarray",
+    "note": "For every element in array, have an object containing min,max;nums[i]* nums[i-1] min and max;Print the maximum max of the objects"
+  },
+  {
+    "questionId": "153",
+    "week": 2,
+    "group": "Data Structures",
+    "title": "Find Minimum in Rotated Sorted Array",
+    "titleSlug": "find-minimum-in-rotated-sorted-array",
+    "note": ""
+  },
+  {
+    "questionId": "190",
+    "week": 6,
+    "group": "Bit",
+    "title": "Reverse Bits",
+    "titleSlug": "reverse-bits",
+    "note": ""
+  },
+  {
+    "questionId": "191",
+    "week": 6,
+    "group": "Bit",
+    "title": "Number of 1 Bits",
+    "titleSlug": "number-of-1-bits",
+    "note": ""
+  },
+  {
+    "questionId": "198",
+    "week": 5,
+    "group": "Dynamic Programming​​",
+    "title": "House Robber",
+    "titleSlug": "house-robber",
+    "note": ""
+  },
+  {
+    "questionId": "200",
+    "week": 2,
+    "group": "Data Structures",
+    "title": "Number of Islands",
+    "titleSlug": "number-of-islands",
+    "note": ""
+  },
+  {
+    "questionId": "206",
+    "week": 2,
+    "group": "Data Structures",
+    "title": "Reverse Linked List",
+    "titleSlug": "reverse-linked-list",
+    "note": ""
+  },
+  {
+    "questionId": "207",
+    "week": 3,
+    "group": "Non-linear data structures​",
+    "title": "Course Schedule",
+    "titleSlug": "course-schedule",
+    "note": ""
+  },
+  {
+    "questionId": "208",
+    "week": 4,
+    "group": "More data structures​​",
+    "title": "Implement Trie (Prefix Tree)",
+    "titleSlug": "implement-trie-prefix-tree",
+    "note": ""
+  },
+  {
+    "questionId": "211",
+    "week": 4,
+    "group": "More data structures​​",
+    "title": "Design Add and Search Words Data Structure",
+    "titleSlug": "design-add-and-search-words-data-structure",
+    "note": ""
+  },
+  {
+    "questionId": "212",
+    "week": 4,
+    "group": "More data structures​​",
+    "title": "Word Search II",
+    "titleSlug": "word-search-ii",
+    "note": ""
+  },
+  {
+    "questionId": "213",
+    "week": 5,
+    "group": "Dynamic Programming​​",
+    "title": "House Robber II",
+    "titleSlug": "house-robber-ii",
+    "note": ""
+  },
+  {
+    "questionId": "217",
+    "week": 1,
+    "group": "Sequences",
+    "title": "Contains Duplicate",
+    "titleSlug": "contains-duplicate",
+    "note": "Use Set();Compare set.size and arr.length"
+  },
+  {
+    "questionId": "226",
+    "week": 3,
+    "group": "Non-linear data structures​",
+    "title": "Invert Binary Tree",
+    "titleSlug": "invert-binary-tree",
+    "note": ""
+  },
+  {
+    "questionId": "230",
+    "week": 4,
+    "group": "More data structures​​",
+    "title": "Kth Smallest Element in a BST",
+    "titleSlug": "kth-smallest-element-in-a-bst",
+    "note": ""
+  },
+  {
+    "questionId": "235",
+    "week": 4,
+    "group": "More data structures​​",
+    "title": "Lowest Common Ancestor of a Binary Search Tree",
+    "titleSlug": "lowest-common-ancestor-of-a-binary-search-tree",
+    "note": ""
+  },
+  {
+    "questionId": "236",
+    "week": 3,
+    "group": "Non-linear data structures​",
+    "title": "Lowest Common Ancestor of a Binary Tree",
+    "titleSlug": "lowest-common-ancestor-of-a-binary-tree",
+    "note": ""
+  },
+  {
+    "questionId": "238",
+    "week": 1,
+    "group": "Sequences",
+    "title": "Product of Array Except Self",
+    "titleSlug": "product-of-array-except-self",
+    "note": "Multiply the numbers before self and the numbers after self;Prefix and postfix"
+  },
+  {
+    "questionId": "242",
+    "week": 1,
+    "group": "Sequences",
+    "title": "Valid Anagram",
+    "titleSlug": "valid-anagram",
+    "note": "Two words;Bucket ASCII array;Letters should cancel out;If array is non-zero then they are not anagrams"
+  },
+  {
+    "questionId": "252",
+    "week": 4,
+    "group": "More data structures​​",
+    "title": "Meeting Rooms",
+    "titleSlug": "meeting-rooms",
+    "note": ""
+  },
+  {
+    "questionId": "253",
+    "week": 4,
+    "group": "More data structures​​",
+    "title": "Meeting Rooms II",
+    "titleSlug": "meeting-rooms-ii",
+    "note": ""
+  },
+  {
+    "questionId": "261",
+    "week": 4,
+    "group": "More data structures​​",
+    "title": "Graph Valid Tree",
+    "titleSlug": "graph-valid-tree",
+    "note": ""
+  },
+  {
+    "questionId": "268",
+    "week": 1,
+    "group": "Sequences",
+    "title": "Missing Number",
+    "titleSlug": "missing-number",
+    "note": ""
+  },
+  {
+    "questionId": "269",
+    "week": 4,
+    "group": "More data structures​​",
+    "title": "Alien Dictionary",
+    "titleSlug": "alien-dictionary",
+    "note": ""
+  },
+  {
+    "questionId": "271",
+    "week": 3,
+    "group": "Non-linear data structures​",
+    "title": "Encode and Decode Strings",
+    "titleSlug": "encode-and-decode-strings",
+    "note": ""
+  },
+  {
+    "questionId": "295",
+    "week": 4,
+    "group": "More data structures​​",
+    "title": "Find Median from Data Stream",
+    "titleSlug": "find-median-from-data-stream",
+    "note": ""
+  },
+  {
+    "questionId": "300",
+    "week": 5,
+    "group": "Dynamic Programming​​",
+    "title": "Longest Increasing Subsequence",
+    "titleSlug": "longest-increasing-subsequence",
+    "note": ""
+  },
+  {
+    "questionId": "322",
+    "week": 5,
+    "group": "Dynamic Programming​​",
+    "title": "Coin Change",
+    "titleSlug": "coin-change",
+    "note": ""
+  },
+  {
+    "questionId": "323",
+    "week": 4,
+    "group": "More data structures​​",
+    "title": "Number of Connected Components in an Undirected Graph",
+    "titleSlug": "number-of-connected-components-in-an-undirected-graph",
+    "note": ""
+  },
+  {
+    "questionId": "338",
+    "week": 6,
+    "group": "Bit",
+    "title": "Counting Bits",
+    "titleSlug": "counting-bits",
+    "note": ""
+  },
+  {
+    "questionId": "347",
+    "week": 3,
+    "group": "Non-linear data structures​",
+    "title": "Top K Frequent Elements",
+    "titleSlug": "top-k-frequent-elements",
+    "note": ""
+  },
+  {
+    "questionId": "371",
+    "week": 6,
+    "group": "Bit",
+    "title": "Sum of Two Integers",
+    "titleSlug": "sum-of-two-integers",
+    "note": ""
+  },
+  {
+    "questionId": "417",
+    "week": 2,
+    "group": "Data Structures",
+    "title": "Pacific Atlantic Water Flow",
+    "titleSlug": "pacific-atlantic-water-flow",
+    "note": ""
+  },
+  {
+    "questionId": "424",
+    "week": 2,
+    "group": "Data Structures",
+    "title": "Longest Repeating Character Replacement",
+    "titleSlug": "longest-repeating-character-replacement",
+    "note": ""
+  },
+  {
+    "questionId": "435",
+    "week": 3,
+    "group": "Non-linear data structures​",
+    "title": "Non-overlapping Intervals",
+    "titleSlug": "non-overlapping-intervals",
+    "note": ""
+  },
+  {
+    "questionId": "449",
+    "week": 3,
+    "group": "Non-linear data structures​",
+    "title": "Serialize and Deserialize BST",
+    "titleSlug": "serialize-and-deserialize-bst",
+    "note": ""
+  },
+  {
+    "questionId": "572",
+    "week": 4,
+    "group": "More data structures​​",
+    "title": "Subtree of Another Tree",
+    "titleSlug": "subtree-of-another-tree",
+    "note": ""
+  },
+  {
+    "questionId": "647",
+    "week": 2,
+    "group": "Data Structures",
+    "title": "Palindromic Substrings",
+    "titleSlug": "palindromic-substrings",
+    "note": ""
+  },
+  {
+    "questionId": "1250",
+    "week": 5,
+    "group": "Dynamic Programming​​",
+    "title": "Longest Common Subsequence",
+    "titleSlug": "longest-common-subsequence",
+    "note": ""
+  }
+]
