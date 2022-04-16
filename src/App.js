@@ -9,38 +9,105 @@ export default function App() {
 
   return (
     <div className="App">
-      {questions.map(
-        (question) =>
-          question.note &&
-          (!clicked || clicked === question.group) && (
-            <div>
-              <span className="q-header no-select">
-                <h1>
-                  <a
-                    href={`https://leetcode.com/problems/${question.titleSlug}/submissions/`}
-                  >{`${question.questionId}. ${question.title}`}</a>
-                </h1>
-                <h2
-                  data-value={question.group}
-                  onClick={clickGroup}
-                  style={{
-                    backgroundColor:
-                      clicked === question.group
-                        ? `red`
-                        : `#${question.week}1${(question.week * 3) % 9}242`
-                  }}
-                  className="q-group"
-                >
-                  {question.group}
-                </h2>
-              </span>
-              {question.note.split(";").map((note) => (
-                <h2>• {note}</h2>
-              ))}
-              <br />
-            </div>
-          )
-      )}
+      <div className="filter-btn">
+        <p
+          data-value="Sequences"
+          onClick={clickGroup}
+          style={{
+            backgroundColor: clicked === "Sequences" ? `red` : `#113242`
+          }}
+          className="q-group no-select"
+        >
+          Sequences
+        </p>
+        <p
+          data-value="Data Structures"
+          onClick={clickGroup}
+          style={{
+            backgroundColor: clicked === "Data Structures" ? `red` : `#216242`
+          }}
+          className="q-group no-select"
+        >
+          Data Structures
+        </p>
+        <p
+          data-value="Non-linear data structures​"
+          onClick={clickGroup}
+          style={{
+            backgroundColor:
+              clicked === "Non-linear data structures​" ? `red` : `#310242`
+          }}
+          className="q-group no-select"
+        >
+          Non-linear data structures​
+        </p>
+        <p
+          data-value="More data structures​​"
+          onClick={clickGroup}
+          style={{
+            backgroundColor:
+              clicked === "More data structures​​" ? `red` : `#413242`
+          }}
+          className="q-group no-select"
+        >
+          More data structures​​
+        </p>
+        <p
+          data-value="Dynamic Programming​​"
+          onClick={clickGroup}
+          style={{
+            backgroundColor:
+              clicked === "Dynamic Programming​​" ? `red` : `#516242`
+          }}
+          className="q-group no-select"
+        >
+          Dynamic Programming​​
+        </p>
+        <p
+          data-value="Bit"
+          onClick={clickGroup}
+          style={{
+            backgroundColor: clicked === "Bit" ? `red` : `#610242`
+          }}
+          className="q-group no-select"
+        >
+          Bit
+        </p>
+      </div>
+      <div className="q-card-wrapper">
+        {questions.map(
+          (question) =>
+            question.note &&
+            (!clicked || clicked === question.group) && (
+              <div className="q-card">
+                <span className="q-header no-select">
+                  <p>
+                    <a
+                      href={`https://leetcode.com/problems/${question.titleSlug}/submissions/`}
+                    >{`${question.questionId}. ${question.title}`}</a>
+                  </p>
+                  <p
+                    data-value={question.group}
+                    onClick={clickGroup}
+                    style={{
+                      backgroundColor:
+                        clicked === question.group
+                          ? `red`
+                          : `#${question.week}1${(question.week * 3) % 9}242`
+                    }}
+                    className="q-group"
+                  >
+                    {question.group}
+                  </p>
+                </span>
+                {question.note.split(";").map((note) => (
+                  <p className="q-note">• {note}</p>
+                ))}
+                <br />
+              </div>
+            )
+        )}
+      </div>
     </div>
   );
 }
