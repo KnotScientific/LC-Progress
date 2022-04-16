@@ -101,7 +101,7 @@
     "group": "Sequences",
     "title": "Group Anagrams",
     "titleSlug": "group-anagrams",
-    "note": "Object;The key is the bucket array of 26 letters;The values are an array containing each grouped anagrams;Push in object value;Print Object.values(obj)"
+    "note": "Object;The key is the bucket array of 26 letters;-'a'.charCodeAt(0);The values are an array containing each grouped anagrams;Push in object value;Print Object.values(obj)"
   },
   {
     "questionId": "53",
@@ -445,7 +445,7 @@
     "group": "Sequences",
     "title": "Valid Anagram",
     "titleSlug": "valid-anagram",
-    "note": "Two words;Bucket ASCII array;Letters should cancel out;If array is non-zero then they are not anagrams"
+    "note": "Two words;Bucket ASCII array;-'a'.charCodeAt(0);Letters should cancel out;If array is non-zero then they are not anagrams"
   },
   {
     "questionId": "252",
