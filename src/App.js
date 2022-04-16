@@ -11,15 +11,21 @@ export default function App() {
         e.target.getAttribute("data-value")
     );
 
+  const btnstyle = (group) => ({
+    borderWidth: "2px",
+    color: clicked === group ? "white" : "black",
+    borderStyle: "solid",
+    borderColor: clicked === group ? "red" : "black",
+    backgroundColor: clicked === group ? `red` : `white`
+  });
+
   return (
     <div className="App no-select">
       <div className="filter-btn">
         <p
           data-value="Sequences"
           onClick={clickGroup}
-          style={{
-            backgroundColor: clicked === "Sequences" ? `red` : `#113242`
-          }}
+          style={btnstyle("Sequences")}
           className="q-group"
         >
           Sequences
@@ -27,9 +33,7 @@ export default function App() {
         <p
           data-value="Data Structures"
           onClick={clickGroup}
-          style={{
-            backgroundColor: clicked === "Data Structures" ? `red` : `#216242`
-          }}
+          style={btnstyle("Data Structures")}
           className="q-group"
         >
           Data Structures
@@ -37,10 +41,7 @@ export default function App() {
         <p
           data-value="Non-linear data structures​"
           onClick={clickGroup}
-          style={{
-            backgroundColor:
-              clicked === "Non-linear data structures​" ? `red` : `#310242`
-          }}
+          style={btnstyle("Non-linear data structures​")}
           className="q-group"
         >
           Non-linear data structures​
@@ -48,10 +49,7 @@ export default function App() {
         <p
           data-value="More data structures​​"
           onClick={clickGroup}
-          style={{
-            backgroundColor:
-              clicked === "More data structures​​" ? `red` : `#413242`
-          }}
+          style={btnstyle("More data structures​​")}
           className="q-group"
         >
           More data structures​​
@@ -59,10 +57,7 @@ export default function App() {
         <p
           data-value="Dynamic Programming​​"
           onClick={clickGroup}
-          style={{
-            backgroundColor:
-              clicked === "Dynamic Programming​​" ? `red` : `#516242`
-          }}
+          style={btnstyle("Dynamic Programming​​")}
           className="q-group"
         >
           Dynamic Programming​​
@@ -70,9 +65,7 @@ export default function App() {
         <p
           data-value="Bit"
           onClick={clickGroup}
-          style={{
-            backgroundColor: clicked === "Bit" ? `red` : `#610242`
-          }}
+          style={btnstyle("Bit")}
           className="q-group"
         >
           Bit
@@ -97,7 +90,9 @@ export default function App() {
                       backgroundColor:
                         clicked === question.group
                           ? `red`
-                          : `#${question.week}1${(question.week * 3) % 9}242`
+                          : `rgb(0, ${question.week * 40}, ${
+                              question.week * 40
+                            })`
                     }}
                     className="q-group"
                   >
