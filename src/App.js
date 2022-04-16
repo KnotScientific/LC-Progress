@@ -1,7 +1,12 @@
+import { useState } from "react";
 import "./styles.css";
+import React from "react";
 export default function App() {
   let questions = require("./t.json");
-  let clicked = "Sequences";
+  const [clicked, setClicked] = useState("");
+  const clickGroup = (e) =>
+    setClicked((prev) => !prev && e.target.getAttribute("data-value"));
+
   return (
     <div className="App">
       {questions.map(
@@ -9,28 +14,22 @@ export default function App() {
           question.note &&
           (!clicked || clicked === question.group) && (
             <div>
-              <span
-                style={{
-                  display: "flex",
-                  flexDirection: "row",
-                  alignItems: "center"
-                }}
-              >
+              <span className="q-header no-select">
                 <h1>
                   <a
                     href={`https://leetcode.com/problems/${question.titleSlug}/submissions/`}
                   >{`${question.questionId}. ${question.title}`}</a>
                 </h1>
                 <h2
+                  data-value={question.group}
+                  onClick={clickGroup}
                   style={{
-                    margin: "10px",
-                    padding: "5px",
-                    backgroundColor: `#${question.week}1${
-                      (question.week * 3) % 9
-                    }242`,
-                    color: "white",
-                    borderRadius: "10px"
+                    backgroundColor:
+                      clicked === question.group
+                        ? `red`
+                        : `#${question.week}1${(question.week * 3) % 9}242`
                   }}
+                  className="q-group"
                 >
                   {question.group}
                 </h2>
