@@ -5,10 +5,14 @@ export default function App() {
   let questions = require("./t.json");
   const [clicked, setClicked] = useState("");
   const clickGroup = (e) =>
-    setClicked((prev) => !prev && e.target.getAttribute("data-value"));
+    setClicked(
+      (prev) =>
+        ((prev && prev !== e.target.getAttribute("data-value")) || !prev) &&
+        e.target.getAttribute("data-value")
+    );
 
   return (
-    <div className="App">
+    <div className="App no-select">
       <div className="filter-btn">
         <p
           data-value="Sequences"
@@ -16,7 +20,7 @@ export default function App() {
           style={{
             backgroundColor: clicked === "Sequences" ? `red` : `#113242`
           }}
-          className="q-group no-select"
+          className="q-group"
         >
           Sequences
         </p>
@@ -26,7 +30,7 @@ export default function App() {
           style={{
             backgroundColor: clicked === "Data Structures" ? `red` : `#216242`
           }}
-          className="q-group no-select"
+          className="q-group"
         >
           Data Structures
         </p>
@@ -37,7 +41,7 @@ export default function App() {
             backgroundColor:
               clicked === "Non-linear data structures​" ? `red` : `#310242`
           }}
-          className="q-group no-select"
+          className="q-group"
         >
           Non-linear data structures​
         </p>
@@ -48,7 +52,7 @@ export default function App() {
             backgroundColor:
               clicked === "More data structures​​" ? `red` : `#413242`
           }}
-          className="q-group no-select"
+          className="q-group"
         >
           More data structures​​
         </p>
@@ -59,7 +63,7 @@ export default function App() {
             backgroundColor:
               clicked === "Dynamic Programming​​" ? `red` : `#516242`
           }}
-          className="q-group no-select"
+          className="q-group"
         >
           Dynamic Programming​​
         </p>
@@ -69,7 +73,7 @@ export default function App() {
           style={{
             backgroundColor: clicked === "Bit" ? `red` : `#610242`
           }}
-          className="q-group no-select"
+          className="q-group"
         >
           Bit
         </p>
@@ -80,7 +84,7 @@ export default function App() {
             question.note &&
             (!clicked || clicked === question.group) && (
               <div className="q-card">
-                <span className="q-header no-select">
+                <span className="q-header">
                   <p>
                     <a
                       href={`https://leetcode.com/problems/${question.titleSlug}/submissions/`}
