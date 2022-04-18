@@ -77,7 +77,7 @@
     "group": "Sequences",
     "title": "Search in Rotated Sorted Array",
     "titleSlug": "search-in-rotated-sorted-array",
-    "note": ""
+    "note": "If the arr gets rotated, it gets turned into two sorted arrays;|⊿⊿;Left side and Right side;Have a start, mid, end;Check if mid is in left side (mid>=start) or right side;Then check if target between left side or right side;LL RR;Loop while(start<=end) until mid===target or not"
   },
   {
     "questionId": "39",

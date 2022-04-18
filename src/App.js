@@ -4,12 +4,14 @@ import React from "react";
 export default function App() {
   let questions = require("./t.json");
   const [clicked, setClicked] = useState("");
+  const [search, setSearch] = useState("");
   const clickGroup = (e) =>
     setClicked(
       (prev) =>
         ((prev && prev !== e.target.getAttribute("data-value")) || !prev) &&
         e.target.getAttribute("data-value")
     );
+  const searchChange = (e) => setSearch(() => e.target.value);
 
   const btnstyle = (group) => ({
     borderWidth: "2px",
@@ -21,6 +23,13 @@ export default function App() {
 
   return (
     <div className="App no-select">
+      <input
+        className="search-bar"
+        placeholder="Search Question"
+        type="text"
+        value={search}
+        onChange={searchChange}
+      />
       <div className="filter-btn">
         <p
           data-value="Sequences"
@@ -75,6 +84,8 @@ export default function App() {
         {questions.map(
           (question) =>
             question.note &&
+            (!search ||
+              question.title.toUpperCase().includes(search.toUpperCase())) &&
             (!clicked || clicked === question.group) && (
               <div className="q-card">
                 <span className="q-header">

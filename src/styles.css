@@ -57,6 +57,31 @@ a {
   justify-content: center;
   font-size: 20px;
 }
+.search-bar {
+  border-width: 5px;
+  color: red;
+  border-style: double;
+  border-radius: 5px;
+  height: 20px;
+  border-color: black;
+  background-color: azure;
+  width: 200px;
+  padding: 5px;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.search-bar:focus {
+  outline: none;
+  border: 5px solid red;
+  background-color: oldlace;
+}
+.search-bar::placeholder {
+  text-align: center;
+  opacity: 0.7;
+}
+.search-bar:focus::placeholder {
+  color: transparent;
+}
 @media only screen and (max-width: 768px) {
   .q-card {
     width: 80vw;
