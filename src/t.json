@@ -29,7 +29,7 @@
     "group": "Data Structures",
     "title": "Container With Most Water",
     "titleSlug": "container-with-most-water",
-    "note": ""
+    "note": "Start from start,end;While(start<end);area = max(area, min(height[start],height[end]) * (end-start));If start height lower than end move up;Vice versa move down"
   },
   {
     "questionId": "15",
@@ -253,7 +253,7 @@
     "group": "Sequences",
     "title": "Valid Palindrome",
     "titleSlug": "valid-palindrome",
-    "note": ""
+    "note": "s.toLowerCase().replace(/[^a-z0-9]/gi,'');Loop till i<=Math.floor(s.length/2);if(s[i]!==s[s.length-1-i]) return false"
   },
   {
     "questionId": "128",
@@ -285,7 +285,7 @@
     "group": "Data Structures",
     "title": "Linked List Cycle",
     "titleSlug": "linked-list-cycle",
-    "note": ""
+    "note": "Floyd's cycle detection algo;Two pointers = head;One advances by p=p.next;Other q=q.next.next;If p=q there's cycle;Loop while(p && q && q.next!=null)"
   },
   {
     "questionId": "143",
@@ -309,7 +309,7 @@
     "group": "Data Structures",
     "title": "Find Minimum in Rotated Sorted Array",
     "titleSlug": "find-minimum-in-rotated-sorted-array",
-    "note": ""
+    "note": "start,mid,end;mid = Math.floor((start+end)/2);⊿min is here⊿;Basically find pivot where arrays get shifted;mid < mid-1 then that's the pivot;If mid > end then check right side start = mid+1;else end = mid-1;while(start<=end) return nums[mid]"
   },
   {
     "questionId": "190",
@@ -349,7 +349,7 @@
     "group": "Data Structures",
     "title": "Reverse Linked List",
     "titleSlug": "reverse-linked-list",
-    "note": ""
+    "note": "If head is null return null;Loop until head is null;function ListNode(val, next);tmp is ListNode and it gets bigger and bigger;tmp = new ListNode(head.val,tmp);head=head.next"
   },
   {
     "questionId": "207",
@@ -477,7 +477,7 @@
     "group": "Sequences",
     "title": "Missing Number",
     "titleSlug": "missing-number",
-    "note": ""
+    "note": "Find missing number by subtracting sum of [0...n] and sum of actual array;Gauss formula to find sum of consequtive numbers;Find sum of numbers 1-100: (100 / 2)(1 + 100);for(let i=nums.length<semicolon>i--<semicolon>) fastest for loop"
   },
   {
     "questionId": "269",
