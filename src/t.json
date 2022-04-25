@@ -13,7 +13,7 @@
     "group": "Data Structures",
     "title": "Longest Substring Without Repeating Characters",
     "titleSlug": "longest-substring-without-repeating-characters",
-    "note": ""
+    "note": "Sliding window;Left, Right, maxLen, object containing count of each letters;comparing str[left] and str[right];If letter doesnt exist already in substring/count;increment count of letter;substring is s.substring(left,right+1);maxLen is either maxLen or substring.length;If letter already exists, then advance left pointer and decrease count until str[left] is equal to str[right];advnace left pointer one more time"
   },
   {
     "questionId": "5",
@@ -45,7 +45,7 @@
     "group": "Data Structures",
     "title": "Remove Nth Node From End of List",
     "titleSlug": "remove-nth-node-from-end-of-list",
-    "note": ""
+    "note": "tmp=head;Loop through nodelist to get length of list;If len==n then move tmp to be 2nd node else keep it as head;Loop head again, decrement len, if len=n then head.next = head.next.next and break;return tmp"
   },
   {
     "questionId": "20",
@@ -341,7 +341,7 @@
     "group": "Data Structures",
     "title": "Number of Islands",
     "titleSlug": "number-of-islands",
-    "note": ""
+    "note": "BFS;Loop through every row and column;If point is 1 then iterate numIslands;Push coordinates to stack;Also check +, adjacent horizontal and vertical points nearbby the point;If they have 1,then push them to stack;Loop through them and mark them as visited;TLDR loop through every point and if they are 1 then iterate through the adjacents points and its points and so on, till no land nearby"
   },
   {
     "questionId": "206",
@@ -557,7 +557,7 @@
     "group": "Data Structures",
     "title": "Pacific Atlantic Water Flow",
     "titleSlug": "pacific-atlantic-water-flow",
-    "note": ""
+    "note": "DFS question;We keep track of two arrays pacific and atlantic;Cells where water flows to each ocean;We start from the edges (top,bottom,left,right);We recursively make our way to adjacent cells;If the height gets higher meaning itll flow to the ocean, we mark the arrays (atlantic and pacific) for that cell;At the end we loop through each cell and if both arrays/oceans exist then its part of results object;return Object.values(results)"
   },
   {
     "questionId": "424",
@@ -565,7 +565,7 @@
     "group": "Data Structures",
     "title": "Longest Repeating Character Replacement",
     "titleSlug": "longest-repeating-character-replacement",
-    "note": ""
+    "note": "Sliding window;Left, Right, maxFreq, object to keep count of each letter;Move right;Keep count of letter;maxFreq is max count of a letter;if(right-left+1-maxFreq>k) then advance left and also decrement count of that letter;return res = Math.max(res,right-left+1)"
   },
   {
     "questionId": "435",
@@ -597,7 +597,7 @@
     "group": "Data Structures",
     "title": "Palindromic Substrings",
     "titleSlug": "palindromic-substrings",
-    "note": ""
+    "note": "There are two types of palindromes, odd and even length;Odd are 'a' 'aaa' 'ababa';Even are 'aa' 'abba' 'bcaacb';Brute force way is O(n^3);Instead of finding all substrings starting from that letter, we find expand left and right from the letter and find substrings with the letter in the middle;Loop through string, and call traverse(i,i) for odd and traverse(i,i+1) for even;In traverse function, we keep expanding until start<0 and end>=s.length and the letter[start] !== letter[end]"
   },
   {
     "questionId": "1250",
