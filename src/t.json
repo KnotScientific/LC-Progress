@@ -325,7 +325,7 @@
     "group": "Bit",
     "title": "Number of 1 Bits",
     "titleSlug": "number-of-1-bits",
-    "note": ""
+    "note": "n.toString(2).split('1').length-1;You can also mod num by 2 and divide by 2 until num is 0 to get count of 1s"
   },
   {
     "questionId": "198",
