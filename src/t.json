@@ -117,7 +117,7 @@
     "group": "Data Structures",
     "title": "Spiral Matrix",
     "titleSlug": "spiral-matrix",
-    "note": ""
+    "note": "Four for loops representing four directions;Left,down,right,up;Do this while result.length less than matrix size;top and left var increase after for loop;while bottom and right decrease;template for moving left(let i = left  i<= right && result.length<size  i++)"
   },
   {
     "questionId": "55",
