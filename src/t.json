@@ -61,7 +61,7 @@
     "group": "Data Structures",
     "title": "Merge Two Sorted Lists",
     "titleSlug": "merge-two-sorted-lists",
-    "note": ""
+    "note": "Initially check if any of them is empty, if yes then return the other one;let tmp = new ListNode();let head = tmp;Run loop while list1 and list2 arent empty;compare the val of nodes;assign head.next = list;advance list;and then advance head;After loop exists check if any leftover head.next = list;return tmp.next cuz initial head is null"
   },
   {
     "questionId": "23",
