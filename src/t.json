@@ -93,7 +93,7 @@
     "group": "Data Structures",
     "title": "Rotate Image",
     "titleSlug": "rotate-image",
-    "note": ""
+    "note": "Reuse same grid array;Write down changes when rotated and observe pattern;Each loop 4 points are changing;Basically pick corner points and swap them basically;for(let i=0 i<Math.ceil(a.length/2) i++);for(let j=i j<a.length-i-1 j++);i<Math.ceil(a.length/2) for inner matrix. We loop 1 time for 2x2, 2 time for 3x3, 2 time for 4x4, 5 time for 5x5 etc;Have a tmp to hold first grid value"
   },
   {
     "questionId": "49",
